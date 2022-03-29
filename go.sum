@@ -1,0 +1,15 @@
+github.com/Pauloo27/go-mpris v1.4.0 h1:KWNTZuXeOdOdIVdzwG/JOOZHlveNiMjiSaK0AWi220c=
+github.com/Pauloo27/go-mpris v1.4.0/go.mod h1:+9otYxTLPRTVZ6i2k6VrG1Y0RzMbBXGuEUQM4ZSvjxU=
+github.com/canalguada/goprocfs v0.0.0-20220803175247-9a27affd88fe h1:Fjz3W67eaV/Lsja0VH1mMhjMHWKBxGiz2HVgD1RIAXg=
+github.com/canalguada/goprocfs v0.0.0-20220803175247-9a27affd88fe/go.mod h1:B1/ZBao/VC7cm594RSTZDZZPh21RZqqn60yPqGQ5/Mw=
+github.com/godbus/dbus v4.1.0+incompatible h1:WqqLRTsQic3apZUK9qC5sGNfXthmPXzUZ7nQPrNITa4=
+github.com/godbus/dbus v4.1.0+incompatible/go.mod h1:/YcGZj5zSblfDWMMoOzV4fas9FZnQYTkDnsGvmh2Grw=
+github.com/godbus/dbus/v5 v5.0.3/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
+github.com/godbus/dbus/v5 v5.1.0 h1:4KLkAxT3aOY8Li4FRJe/KvhoNFFxo0m6fNuFUO8QJUk=
+github.com/godbus/dbus/v5 v5.1.0/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
+github.com/pr11t/pulseaudio v0.0.0-20211118140757-e4e27751a786 h1:AUDWCKQ/1eiTrajw8gO7dO2MibHD/42yCn8E/NVahyQ=
+github.com/pr11t/pulseaudio v0.0.0-20211118140757-e4e27751a786/go.mod h1:yKeYhpxPWO0g0jvaEOWp8g0u15UEiuiKSMh/6HtVdhA=
+github.com/sqp/pulseaudio v0.0.0-20180916175200-29ac6bfa231c h1:GtYMHdPBniUh0I+RZ563TsL6ZlvCbaO7jbEOsDDB7EI=
+github.com/sqp/pulseaudio v0.0.0-20180916175200-29ac6bfa231c/go.mod h1:RH1uOz6XaP849IvlvocEoBsW/SMmxRTzEd7olkyO2zI=
+golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a h1:dGzPydgVsqGcTRVwiLJ1jVbufYwmzD3LfVPLKsKg+0k=
+golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

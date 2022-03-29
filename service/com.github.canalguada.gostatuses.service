@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=com.github.canalguada.gostatuses
+Exec=/home/canalguada/.local/bin/statuses -all
+SystemdService=dbus-com.github.canalguada.gostatuses.service

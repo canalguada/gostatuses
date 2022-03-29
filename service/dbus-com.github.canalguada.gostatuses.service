@@ -1,0 +1,14 @@
+[Unit]
+Description=Generate text based statuses for user interface
+After=pulseaudio.service
+
+[Service]
+Type=dbus
+BusName=com.github.canalguada.gostatuses
+Slice=background.slice
+LimitNICE=5
+Nice=15
+ExecStart=/home/canalguada/.local/bin/statuses -all
+
+[Install]
+WantedBy=default.target
