@@ -99,7 +99,7 @@ func main() {
 	}
 	if len(managed) > 0 {
 		service.Object.AddFileResource(managed...)
-		service.Object.UpdateTimeActivated(0)
+		service.Object.UpdateTimeBased(0)
 	}
 	// spin up workers
 	wg := GetWaitGroup()
@@ -153,7 +153,7 @@ func main() {
 					break loop
 				case <-ticker.C:
 					elapsed++
-					go service.Object.UpdateTimeActivated(elapsed)
+					go service.Object.UpdateTimeBased(elapsed)
 				case <-pulseClient.Channel:
 					go pulseClient.UpdateVolume(service.Object.Channel)
 				case message := <-mprisClient.Channel:

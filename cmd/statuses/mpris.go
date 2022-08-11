@@ -481,19 +481,19 @@ func NewMprisClient() MprisClient {
 	return c
 }
 
-func (c MprisClient) Connect(conn *dbus.Conn, chanStatus chan Status) {
+func (c *MprisClient) Connect(conn *dbus.Conn, chanStatus chan Status) {
 	c.client.connect(conn, chanStatus)
 }
 
-func (c MprisClient) Close() {
+func (c *MprisClient) Close() {
 	c.client.Close()
 }
 
-func (c MprisClient) UpdateMpris(message *dbus.Signal, chanStatus chan Status) {
+func (c *MprisClient) UpdateMpris(message *dbus.Signal, chanStatus chan Status) {
 	c.client.HandleSignal(message, chanStatus)
 }
 
-func (c MprisClient) Updater(chanStatus chan Status, wg sync.WaitGroup) {
+func (c *MprisClient) Updater(chanStatus chan Status, wg sync.WaitGroup) {
 	defer wg.Done()
 	for {
 		select {

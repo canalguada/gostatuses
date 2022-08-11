@@ -55,11 +55,11 @@ func NewPulseClient() PulseClient {
 	return c
 }
 
-func (c PulseClient) Close() {
+func (c *PulseClient) Close() {
 	c.client.Close()
 }
 
-func (c PulseClient) UpdateVolume(chanStatus chan Status) (err error){
+func (c *PulseClient) UpdateVolume(chanStatus chan Status) (err error){
 	mute, err := c.client.Mute()
 	if err != nil {
 		return
@@ -85,7 +85,7 @@ func (c PulseClient) UpdateVolume(chanStatus chan Status) (err error){
 	return
 }
 
-func (c PulseClient) Updater(chanStatus chan Status, wg sync.WaitGroup) {
+func (c *PulseClient) Updater(chanStatus chan Status, wg sync.WaitGroup) {
 	defer wg.Done()
 	c.UpdateVolume(chanStatus)
 	for {
